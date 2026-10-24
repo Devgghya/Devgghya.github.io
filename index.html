@@ -130,7 +130,7 @@
             <div><span>Mechanism</span><p>Frictionless micro-transfers into high-yield liquid funds (7.1% p.a.) tied to personalized student goal pockets.</p></div>
             <div><span>Insights</span><p>Dual-impact dashboard linking psychological wellbeing (minutes reclaimed) with financial compounding velocity.</p></div>
           </div>
-          <a class="project-link" href="assets/sbi_dashboard_preview.png" target="_blank" rel="noreferrer">Explore dashboard prototype <span>↗</span></a>
+          <button type="button" class="project-link" onclick="openSbiModal()" aria-haspopup="dialog">Read full case study <span>↗</span></button>
         </div>
       </article>
 
@@ -172,5 +172,156 @@
   </main>
 
   <footer class="site-footer shell"><div><span class="monogram">DK<span>.</span></span><p>Devgghya Kulshrestha<br>Product designer &amp; creative technologist</p></div><p>Designed with intent.<br>Built to be used.</p><p>Dehradun, India<br>© 2026</p></footer>
+
+  <!-- SBI Mindful Pocket Slide-Out Case Study Modal -->
+  <div id="sbi-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleBackdropClick(event)">
+    <div class="modal-drawer">
+      <header class="modal-header">
+        <div class="modal-title-wrap">
+          <svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true">
+            <path fill="#00b4d8" fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm0 35a14 14 0 0 1 14 14c0 6.3-4.16 11.64-9.9 13.4V100h-8.2V62.4c-5.74-1.76-9.9-7.1-9.9-13.4a14 14 0 0 1 14-14z"/>
+          </svg>
+          <span id="modal-title">SBI Mindful Pocket · In-Depth Case Study</span>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeSbiModal()" aria-label="Close case study">✕ Close (Esc)</button>
+      </header>
+
+      <div class="modal-body" id="modal-body">
+        <p class="cs-eyebrow">Fintech · Behavioral Product Design · iOS Case Study</p>
+        <h2 class="cs-title">SBI Mindful Pocket</h2>
+        <p class="cs-subtitle">Reimagining Digital Wellbeing &amp; Micro-Wealth for Gen-Z</p>
+
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item"><span>Role</span><strong>Lead Product Designer</strong></div>
+          <div class="cs-meta-item"><span>Platform</span><strong>iOS (iPhone 16 Pro)</strong></div>
+          <div class="cs-meta-item"><span>Ecosystem</span><strong>SBI YONO Youth CSR (Concept)</strong></div>
+          <div class="cs-meta-item"><span>Research</span><strong>57 Surveyed · 8 Interviews</strong></div>
+        </div>
+
+        <div class="cs-card">
+          <h4>Executive Summary</h4>
+          <p>College students open social media for legitimate tasks (DMs, project coordination, sketch references), but algorithmic feeds hijack their attention. <strong>78% of students exceed intended screen time</strong>, displacing sleep and triggering late-night impulse spends.</p>
+          <p>Existing screen-time blockers fail because they rely on punitive lockouts and moral shaming. <strong>SBI Mindful Pocket inverts this paradigm through behavioral economics:</strong></p>
+          <ol style="margin: 10px 0 0 18px; padding: 0; font-size: 14px; line-height: 1.6;">
+            <li><strong>Protect:</strong> Anchors user intent in 2 seconds and gates late-night impulse checkouts.</li>
+            <li><strong>Replace:</strong> Replaces mindless dopamine loops with 15-second financial curiosity bytes.</li>
+            <li><strong>Reward:</strong> Converts saved time into real money via automated ₹10 micro-exits into high-yield liquid vaults.</li>
+          </ol>
+        </div>
+
+        <div class="cs-section">
+          <h3>1. Context &amp; Opportunity Space</h3>
+          <p>College students (18–24) live in a hyper-connected environment where communication is co-located with entertainment. Students cannot simply delete these apps without social and academic penalties.</p>
+          <p><strong>The Hidden Financial Drain:</strong> Between 11:00 PM and 2:30 AM, fatigue depletes prefrontal inhibitory control, driving impulsive midnight food delivery orders and unplanned fast-fashion purchases. Students lose sleep and build zero savings momentum.</p>
+          <p><strong>Strategic Value for SBI:</strong> Capturing early Gen-Z users before private neobanks, driving recurring CASA micro-deposits, and establishing ethical banking leadership.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>2. Primary Research Synthesis</h3>
+          <p>Built upon a 57-respondent quantitative survey and 8 qualitative interviews (U1–U8):</p>
+          <div class="cs-stats-grid">
+            <div class="cs-stat-box"><strong>78%</strong><span>Exceeded planned visit duration</span></div>
+            <div class="cs-stat-box"><strong>33%</strong><span>Displaced sleep as top casualty</span></div>
+            <div class="cs-stat-box"><strong>42%</strong><span>Stopped only on "clock shock"</span></div>
+            <div class="cs-stat-box"><strong>30%</strong><span>Opened app solely to reply to a DM</span></div>
+          </div>
+
+          <div class="cs-quote">
+            <p>"Bas sone se pehle ek baar last time Insta check kar leti hu, kya kya messages aaye hain... I spent genuinely two hours watching Reels."</p>
+            <cite>— Participant U6 (The Bedtime DM Trap)</cite>
+          </div>
+          <div class="cs-quote">
+            <p>"Aadha ghanta socha tha, phone screen par 1:40 AM dekha to shock laga. No app warns you nicely; they just lock you out, which makes me angry so I bypass the limit."</p>
+            <cite>— Participant U1 (The Clock Shock)</cite>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>3. Behavioral Economics Architecture</h3>
+          <div class="cs-flow-box">
+            <h5>1. Implementation Intentions (Peter Gollwitzer)</h5>
+            <p>Explicitly declaring intent before encountering a stimulus doubles goal attainment. A 2-second prompt ("What's your purpose right now?") activates conscious System 2 awareness.</p>
+          </div>
+          <div class="cs-flow-box">
+            <h5>2. Micro-Friction as Cognitive Reset (BJ Fogg)</h5>
+            <p>A 10–15 second pause breaks the automatic dopamine loop without forcing an aggressive block, giving the prefrontal cortex time to re-evaluate.</p>
+          </div>
+          <div class="cs-flow-box">
+            <h5>3. Loss Aversion Reframing (Kahneman &amp; Tversky)</h5>
+            <p>Instead of shame ("You failed your limit"), the exit is framed as an instant win: "+₹10 saved to your Goa Trip Fund &amp; 30 minutes of deep sleep protected."</p>
+          </div>
+          <div class="cs-flow-box">
+            <h5>4. Frictionless Internal Sweeps (RBI Norms)</h5>
+            <p>Under Indian banking guidelines, external transactions require 2FA/OTP. SBI Mindful Pocket utilizes internal smart sweeps between primary savings and liquid sub-accounts, executing in 1-tap with zero OTP friction.</p>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>4. UI Execution &amp; High-Fidelity Screens</h3>
+          <p>The companion interfaces with iOS via Apple Screen Time APIs to provide contextual bridges and financial compounding insights.</p>
+          <div class="cs-screens-grid">
+            <div class="cs-screen-item">
+              <img src="assets/sbi_dashboard_preview.png" alt="SBI Mindful Pocket Dual-Impact Dashboard" loading="lazy">
+              <span>Dual-Impact Insights Dashboard</span>
+            </div>
+            <div class="cs-screen-item">
+              <img src="assets/sbi_exit_bridge_preview.png" alt="SBI Contextual Exit Bridge and Micro-Save" loading="lazy">
+              <span>Contextual Exit Bridge &amp; Micro-Save</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>5. Technical Feasibility &amp; Compliance</h3>
+          <p><strong>iOS Screen Time API (FamilyControls):</strong> Allows authorized wellbeing applications to monitor app category thresholds and launch shield configurations within Apple's privacy sandbox.</p>
+          <p><strong>RBI-Compliant Micro-Sweeps:</strong> The Focus Stash functions as an internal recurring liquid sub-account (Sweep-in / Sweep-out Liquid RD) under the customer ID. Users authorize an initial e-Mandate during onboarding, allowing single-tap ₹10 micro-saves without OTP prompts.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>6. Interview Defense &amp; FAQs</h3>
+          <div class="cs-qa">
+            <strong>Q1: Why not simply block the social apps entirely?</strong>
+            <p>30% of app opens are for legitimate communication (project group chats, family DMs). Punitive blockers cause psychological reactance—users get frustrated and delete the app. Mindful Pocket builds internal digital agency.</p>
+          </div>
+          <div class="cs-qa">
+            <strong>Q2: Isn't micro-saving ₹10 too small for a bank like SBI?</strong>
+            <p>For a student, ₹10/day is frictionless. For SBI, ₹10/day across 10 million college students represents ₹10 Crore in daily sticky retail deposits (₹300 Crore/month) captured before private competitors acquire them.</p>
+          </div>
+          <div class="cs-qa">
+            <strong>Q3: What makes this design ethical?</strong>
+            <p>Zero shaming vocabulary (no "Addiction" or "Failure"). The user always retains control with "Not Now" and "+2 Mindful Minutes" options on every checkpoint.</p>
+          </div>
+        </div>
+
+        <div class="cs-footer-actions">
+          <button type="button" class="button button-primary" onclick="closeSbiModal()">Finished reading</button>
+          <button type="button" class="button button-secondary" onclick="document.getElementById('modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openSbiModal() {
+      const modal = document.getElementById('sbi-modal');
+      modal.classList.add('is-active');
+      document.body.classList.add('modal-open');
+    }
+    function closeSbiModal() {
+      const modal = document.getElementById('sbi-modal');
+      modal.classList.remove('is-active');
+      document.body.classList.remove('modal-open');
+    }
+    function handleBackdropClick(e) {
+      if (e.target.id === 'sbi-modal') {
+        closeSbiModal();
+      }
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeSbiModal();
+      }
+    });
+  </script>
 </body>
 </html>
