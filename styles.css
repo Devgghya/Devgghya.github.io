@@ -194,6 +194,7 @@ img { display:block; max-width:100%; }
   .project-visual,.finloby-visual,.dds-visual,.ledgermate-visual,.sbi-visual { min-height:480px; }.mindpalace-visual { min-height:0; }.project-info { min-height:500px; }.project-info>h3 { font-size:58px; margin-top:44px; }.project-lede { font-size:16px; }
   .browser-bar { grid-template-columns:1fr auto; }.browser-bar>span:nth-child(2) { display:none; }.finloby-stage { padding:24px 22px; }.finloby-nav span:last-child { display:none; }.finloby-content h3 { font-size:47px; }.finloby-metrics { grid-template-columns:1fr 1fr; margin-top:42px; }.finloby-metrics>div:last-child { display:none; }
   .lm-stage,.sbi-stage { padding:24px 20px; }
+  .lm-hero h3,.sbi-content h3 { font-size:42px; }
   .lm-metrics,.sbi-stats { grid-template-columns:1fr 1fr; }
   .lm-metrics>div:last-child,.sbi-stats>div:last-child { display:none; }
   .dds-visual { grid-template-columns:64px 1fr; }.dds-sidebar { padding:20px 12px; }.dds-sidebar span:nth-child(2) { font-size:7px; }.dds-main { padding:22px 18px; }.dds-main h3 { font-size:55px; margin-top:70px; }.dds-topline span:last-child { display:none; }.dds-grid { grid-template-columns:repeat(3,1fr); }.dds-grid span { font-size:9px; }
