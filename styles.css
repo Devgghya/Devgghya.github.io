@@ -116,9 +116,10 @@ img { display:block; max-width:100%; }
 .lm-pills span { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); padding:6px 10px; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#d1d5db; }
 
 .sbi-visual { background:#001d36; color:#fff; min-height:600px; display:flex; flex-direction:column; }
-.sbi-stage { flex:1; padding:34px 38px; display:flex; flex-direction:column; justify-content:space-between; background:radial-gradient(circle at 18% 85%,rgba(0,180,216,.25),transparent 45%),linear-gradient(145deg,#001428,#002b4d); }
-.sbi-topbar { display:flex; justify-content:space-between; font-size:9px; text-transform:uppercase; letter-spacing:.14em; color:#79a6d2; border-bottom:1px solid rgba(255,255,255,.15); padding-bottom:18px; }
-.sbi-topbar span:first-child { font-weight:900; color:#00b4d8; font-size:15px; letter-spacing:.04em; }
+.sbi-topbar { display:flex; justify-content:space-between; align-items:center; font-size:9px; text-transform:uppercase; letter-spacing:.14em; color:#79a6d2; border-bottom:1px solid rgba(255,255,255,.15); padding-bottom:18px; }
+.sbi-brand { display:flex; align-items:center; gap:8px; }
+.sbi-brand svg { flex-shrink:0; }
+.sbi-brand span { font-weight:900; color:#00b4d8; font-size:14px; letter-spacing:.04em; }
 .sbi-content { margin:auto 0; }
 .sbi-tag { color:#90e0ef; font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:.16em; margin:0 0 14px; }
 .sbi-content h3 { font-size:clamp(38px,4.5vw,72px); line-height:.96; letter-spacing:-.05em; margin:0; font-weight:800; }
