@@ -80,13 +80,13 @@
         <div class="project-info">
           <div class="project-meta"><span>01</span><span>B2B FinTech · Shipped SaaS</span><span>2026</span></div>
           <h3>LedgerMate</h3>
-          <p class="project-lede">A custom accounting automation SaaS built to eliminate daily manual invoice entry for US property management portfolios.</p>
+          <p class="project-lede">A custom multi-ERP accounting automation platform built to eliminate the 5-hour daily manual invoice entry grind for US property management portfolios.</p>
           <div class="project-details">
-            <div><span>Origin</span><p>Built while working as a junior accountant to automate repetitive Google Sheets-to-QuickBooks reconciliation.</p></div>
-            <div><span>Shipped</span><p>Bi-directional sync (QuickBooks Online + RentVine), direct PDF document pipeline, client portal, and license manager.</p></div>
-            <div><span>Impact</span><p>Compressed daily 3-hour manual bill entry into a 5-minute automated batch process with 100% audit integrity.</p></div>
+            <div><span>Origin</span><p>Built while working 40 hrs/week as a junior accountant, reverse-engineering manual Google Sheets, QuickBooks Online, Buildium, and RentVine workflows.</p></div>
+            <div><span>Shipped</span><p>Dual-ERP auto-sync, multimodal vision pipeline for handwritten contractor receipts, tenant move-out doc compiler, and direct PDF audit linking.</p></div>
+            <div><span>Impact</span><p>Compressed daily 5-hour manual bill entry into a 5-minute automated batch process (98% operational time reduction) with zero reconciliation drift.</p></div>
           </div>
-          <a class="project-link" href="https://www.linkedin.com/in/devgghya-kulshrestha-88909b314" target="_blank" rel="noreferrer">Read build breakdown <span>↗</span></a>
+          <button type="button" class="project-link" onclick="openLmModal()" aria-haspopup="dialog">Read full case study <span>↗</span></button>
         </div>
       </article>
 
@@ -192,11 +192,12 @@
               <p class="resume-role">Product Engineer &amp; Founder</p>
               <p class="resume-desc">Engineered a custom B2B SaaS automation platform while working as a junior accountant, eliminating repetitive daily bill entry for US property management portfolios.</p>
               <ul class="resume-bullets">
-                <li>Automated bidirectional sync between Google Sheets, QuickBooks Online, and RentVine APIs with direct PDF ingestion and remote license kill switch.</li>
-                <li>Compressed daily 3-hour manual bill recording into a 5-minute automated batch process (<strong>97% operational time reduction</strong>) with 100% audit integrity.</li>
+                <li>Automated bidirectional sync across Google Sheets, QuickBooks Online, Buildium, and RentVine APIs with direct PDF evidence linking and remote license control.</li>
+                <li>Engineered multimodal AI vision pipeline parsing handwritten contractor invoices and automated tenant move-out document assembly.</li>
+                <li>Compressed daily 5-hour manual transcription grind into a 5-minute automated batch process (<strong>98% operational time reduction</strong>) with 100% audit integrity.</li>
               </ul>
               <div class="resume-tags">
-                <span>QuickBooks API</span><span>RentVine</span><span>Google Apps Script</span><span>B2B FinTech</span><span>97% Time Saved</span>
+                <span>QuickBooks API</span><span>Buildium</span><span>RentVine</span><span>Multimodal OCR</span><span>B2B FinTech</span><span>98% Time Saved</span>
               </div>
             </article>
 
@@ -332,6 +333,142 @@
 
   <footer class="site-footer shell"><div><span class="monogram">DK<span>.</span></span><p>Devgghya Kulshrestha<br>Product designer &amp; creative technologist</p></div><p>Designed with intent.<br>Built to be used.</p><p>Dehradun, India<br>© 2026</p></footer>
 
+  <!-- LedgerMate Slide-Out Case Study Modal -->
+  <div id="lm-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lm-modal-title" onclick="handleBackdropClick(event)">
+    <div class="modal-drawer">
+      <header class="modal-header">
+        <div class="modal-title-wrap">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--signal)">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M8 7h8"></path>
+            <path d="M8 11h8"></path>
+          </svg>
+          <span id="lm-modal-title">LedgerMate · In-Depth Case Study</span>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeLmModal()" aria-label="Close case study">✕ Close (Esc)</button>
+      </header>
+
+      <div class="modal-body" id="lm-modal-body">
+        <p class="cs-eyebrow">B2B FinTech · Operational Automation · Enterprise Accounting Systems</p>
+        <h2 class="cs-title">LedgerMate</h2>
+        <p class="cs-subtitle">Eliminating the 5-Hour Daily Bookkeeping Grind for US Property Management</p>
+
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item"><span>Role</span><strong>Product Engineer &amp; Architect</strong></div>
+          <div class="cs-meta-item"><span>Platform</span><strong>Cloud Pipeline &amp; Micro-SaaS</strong></div>
+          <div class="cs-meta-item"><span>Ecosystem</span><strong>QuickBooks · Buildium · RentVine</strong></div>
+          <div class="cs-meta-item"><span>Impact</span><strong>98% Time Saved · Zero Error Rate</strong></div>
+        </div>
+
+        <div class="cs-card">
+          <h4>Executive Summary</h4>
+          <p>In US property management, accounting teams lose thousands of billable hours every month to a mind-numbing bottleneck: manually copying contractor invoices, utility bills, and repair expenses from tracking spreadsheets into General Ledger accounting platforms (QuickBooks Online) and operational property ERPs (RentVine, Buildium).</p>
+          <p>While working 40 hours/week as a junior accountant at a firm managing residential and commercial US property portfolios, I experienced this daily friction firsthand. Rather than accepting 4–5 hours of daily copy-pasting as inevitable, I designed and engineered <strong>LedgerMate</strong>: a modular, multi-ERP automation platform and AI-powered document ingestion pipeline.</p>
+          <p><strong>The Core Breakthroughs:</strong></p>
+          <ol style="margin: 10px 0 0 18px; padding: 0; font-size: 14px; line-height: 1.6;">
+            <li><strong>Dual-ERP Sync:</strong> Google Sheets → QuickBooks Online + RentVine/Buildium in a single atomic pass with direct PDF evidence linking.</li>
+            <li><strong>Multimodal Handwritten OCR:</strong> AI vision pipeline parsing messy handwritten contractor/handyman receipts directly into structured accounting records.</li>
+            <li><strong>Tenant Move-Out Pack:</strong> 1-click automated assembly of move-out invoices, deposit deduction calculations, and utility prorations.</li>
+            <li><strong>Results:</strong> Compressed a 5-hour daily manual transcription grind into a 5-minute automated batch execution (<strong>98% operational time reduction</strong>) with 100% audit integrity.</li>
+          </ol>
+        </div>
+
+        <div class="cs-section">
+          <h3>1. The Origin: Working "Undercover" in the Accounting Trenches</h3>
+          <p>Most FinTech designers design interfaces from secondary research or aesthetic Dribbble shots without ever touching a General Ledger or reconciling a bank feed.</p>
+          <p>With a 10+2 commerce foundation, I joined an accounting firm managing back-office books for US property portfolios. My daily reality was pure manual transcription for 40 hours a week: copying rows from Google Sheets, creating Bills in QuickBooks Online, assigning Chart of Accounts GL codes, posting duplicate charges into Buildium/RentVine, and hunting down PDF receipts across fragmented folders.</p>
+          <p><strong>The Friction Multiplier:</strong> A single misclassified GL code created tax headaches for property owners. Misplaced PDF receipts caused audit panic. And 4–5 hours of every single workday were lost to mechanical typing.</p>
+
+          <div class="cs-screens-grid">
+            <div class="cs-screen-item">
+              <img src="assets/ledgermate_laptop_crop.png" alt="LedgerMate Operational Dashboard" loading="lazy">
+              <span>LedgerMate Operational Dashboard</span>
+            </div>
+            <div class="cs-screen-item">
+              <img src="assets/ledgermate_workstation_preview.png" alt="Dual-Monitor Bookkeeping Workstation: Spreadsheets vs VS Code" loading="lazy">
+              <span>Workstation: Spreadsheets vs VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>2. The Turning Point: "Design with and for AI"</h3>
+          <p>While studying User Experience Design at Graphic Era University, I took <em>Design with and for AI</em> taught by <strong>Associate Professor Samarth Reddy</strong>. The core realization: <em>Design is not just visual styling—it is system architecture. A designer who understands information models can use modern AI code synthesis to engineer working software.</em></p>
+          <p>Armed with deep domain knowledge of property bookkeeping and powered by VS Code and GitHub Copilot, I began engineering LedgerMate to solve my own daily professional agony.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>3. Core Engineering &amp; The Three Automation Pipelines</h3>
+          
+          <div class="cs-flow-box">
+            <h5>1. Bi-Directional Multi-ERP Sync &amp; Direct Evidence Linking</h5>
+            <p>Reads unbilled rows from Google Sheets, validates schemas, creates bills in QuickBooks Online (corporate GL), posts unit charges in Buildium/RentVine, embeds PDF proofs directly via binary API endpoints (no Google Drive links), and writes back the generated transaction IDs with a 'Done' flag.</p>
+          </div>
+
+          <div class="cs-flow-box">
+            <h5>2. Multimodal Vision OCR for Handwritten Contractor Invoices</h5>
+            <p>Local plumbers, lawn care teams, and handymen frequently submit handwritten carbon paper receipts with scribbled line items. LedgerMate integrates a multimodal vision extraction pipeline that parses handwritten notes, separates labor from parts, extracts totals, and stages structured JSON directly into Buildium.</p>
+          </div>
+
+          <div class="cs-flow-box">
+            <h5>3. Automated Tenant Move-Out (MO) Document Assembly</h5>
+            <p>When a tenant vacates, property managers face strict statutory deadlines to return security deposits. LedgerMate synthesizes move-out inspection checklists, outstanding utility ledgers, and repair deductions to compile a standardized, audit-ready Move-Out Statement and reconciliation letter in under 30 seconds.</p>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>4. Reliability, Security &amp; IP Architecture</h3>
+          <p><strong>Atomic Batching &amp; Exception Queues:</strong> If 1 bill out of 75 fails (e.g. an unmapped vendor name or missing unit number), LedgerMate isolates the exception into an interactive review queue while successfully processing the other 74 rows without crashing the batch.</p>
+          <p><strong>Idempotency Safeguards:</strong> Unique composite hashing (Vendor + Invoice# + Property ID + Amount) mathematically prevents duplicate bills even if a user triggers sync multiple times.</p>
+          <p><strong>Licensing &amp; Remote Kill-Switch:</strong> Built a client portal with usage metrics, token encryption, and an administrative license switch ensuring proprietary business logic remains secure.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>5. Quantifiable Business Impact &amp; ROI</h3>
+          <div class="cs-stats-grid">
+            <div class="cs-stat-box"><strong>98%</strong><span>Daily Time Reduction (5h → 5m)</span></div>
+            <div class="cs-stat-box"><strong>0.0%</strong><span>Reconciliation Error Rate</span></div>
+            <div class="cs-stat-box"><strong>100%</strong><span>Direct PDF Attachment Rate</span></div>
+            <div class="cs-stat-box"><strong>100+</strong><span>Billable Hours Saved / Month</span></div>
+          </div>
+
+          <div class="cs-quote">
+            <p>"I hadn't joined the firm just to do data entry; I joined to dissect the mechanical reality of financial systems from the inside. Once I built the system, I understood the value of software ownership."</p>
+            <cite>— Devgghya Kulshrestha (Reflecting on the LedgerMate Build)</cite>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>6. The Founder's Pivot: From Task-Doer to IP Owner</h3>
+          <p>Building LedgerMate revealed a fundamental business truth: building system-level automation creates an order of magnitude more economic value than repetitive manual keystrokes.</p>
+          <p>Because LedgerMate was engineered independently on my own environment with proprietary logic, I maintained full legal and intellectual property ownership of the codebase. I preserved the platform, modularized its connectors, and repackaged it into an independent B2B automation asset that serves as the foundation of my FinTech engineering portfolio.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>7. Interview Defense &amp; FAQs</h3>
+          <div class="cs-qa">
+            <strong>Q1: Why not simply use off-the-shelf tools like Zapier or Make.com?</strong>
+            <p>Off-the-shelf iPaaS platforms are brittle for dual-ERP property accounting. Zapier charges steep fees at high transaction volume, lacks atomic batch rollback, and cannot handle complex hierarchical mappings (matching a contractor invoice to a specific property and unit in Buildium while simultaneously debiting the correct GL Chart of Accounts in QuickBooks Online). Furthermore, Zapier cannot handle multimodal handwritten invoice parsing or automated Move-Out PDF document compilation out of the box.</p>
+          </div>
+          <div class="cs-qa">
+            <strong>Q2: How did you ensure data integrity between QuickBooks and Buildium?</strong>
+            <p>LedgerMate enforces a strict two-phase commit pattern. The payload is validated, posted to QuickBooks Online to capture the generated TxnId, and only upon an HTTP 200/201 response is the unit charge posted to Buildium/RentVine, cross-referencing both IDs before marking the spreadsheet row as Done. If any endpoint fails, the transaction is flagged in the exception queue for manual resolution rather than corrupting the ledger.</p>
+          </div>
+          <div class="cs-qa">
+            <strong>Q3: How did a designer build this without a traditional Computer Science degree?</strong>
+            <p>Modern software engineering is undergoing an architectural inversion. What matters most today is deep domain empathy, rigorous information architecture, and the ability to steer AI code models (GitHub Copilot, LLM relays) with surgical precision. Because I understood debits, credits, vendor terms, and property operations, I was able to specify the exact system logic that an outside software engineer would have taken months to comprehend.</p>
+          </div>
+        </div>
+
+        <div class="cs-footer-actions">
+          <button type="button" class="button button-primary" onclick="closeLmModal()">Finished reading</button>
+          <button type="button" class="button button-secondary" onclick="document.getElementById('lm-modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- SBI Mindful Pocket Slide-Out Case Study Modal -->
   <div id="sbi-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleBackdropClick(event)">
     <div class="modal-drawer">
@@ -461,6 +598,16 @@
   </div>
 
   <script>
+    function openLmModal() {
+      const modal = document.getElementById('lm-modal');
+      modal.classList.add('is-active');
+      document.body.classList.add('modal-open');
+    }
+    function closeLmModal() {
+      const modal = document.getElementById('lm-modal');
+      modal.classList.remove('is-active');
+      document.body.classList.remove('modal-open');
+    }
     function openSbiModal() {
       const modal = document.getElementById('sbi-modal');
       modal.classList.add('is-active');
@@ -474,11 +621,14 @@
     function handleBackdropClick(e) {
       if (e.target.id === 'sbi-modal') {
         closeSbiModal();
+      } else if (e.target.id === 'lm-modal') {
+        closeLmModal();
       }
     }
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         closeSbiModal();
+        closeLmModal();
       }
     });
   </script>
