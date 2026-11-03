@@ -282,3 +282,17 @@ body.modal-open { overflow:hidden; }
   .contact-section { padding:90px 0 100px; }.contact-section h2 { font-size:62px; }.contact-actions { flex-direction:column; align-items:stretch; }.text-link { justify-content:center; }
   .site-footer { grid-template-columns:1fr 1fr; min-height:180px; }.site-footer>p:nth-child(2) { display:none; }
 }
+
+/* Case Study Figures, Disclaimers, and Data Tables */
+.cs-figure { margin:32px 0; border:1px solid var(--line); border-radius:6px; overflow:hidden; background:var(--white); box-shadow:0 4px 20px rgba(0,0,0,.06); }
+.cs-figure img { width:100%; height:auto; display:block; }
+.cs-figure figcaption { padding:14px 20px; font-size:11.5px; font-weight:700; color:var(--muted); background:var(--paper-2); border-top:1px solid var(--line); line-height:1.5; }
+.cs-disclaimer { border-left:3px solid #f59e0b; padding:16px 20px; margin:24px 0; background:rgba(245,158,11,.08); font-size:12.5px; color:#78350f; line-height:1.6; border-radius:0 4px 4px 0; }
+.cs-table-wrap { overflow-x:auto; margin:24px 0; border:1px solid var(--line); border-radius:6px; background:var(--white); -webkit-overflow-scrolling:touch; box-shadow:0 2px 10px rgba(0,0,0,.03); }
+.cs-table { width:100%; border-collapse:collapse; font-size:13px; text-align:left; min-width:540px; }
+.cs-table th,.cs-table td { padding:14px 18px; border-bottom:1px solid var(--line); vertical-align:top; }
+.cs-table th { background:var(--paper-2); font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink); width:28%; white-space:nowrap; }
+.cs-table td { color:#302f2b; line-height:1.6; }
+.cs-table tr:last-child th,.cs-table tr:last-child td { border-bottom:none; }
+.cs-pill-group { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
+.cs-pill-group span { background:var(--white); border:1px solid var(--line); padding:6px 14px; font-size:11px; font-weight:700; color:var(--ink); border-radius:100px; }

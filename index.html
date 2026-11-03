@@ -122,13 +122,13 @@
           </div>
         </div>
         <div class="project-info">
-          <div class="project-meta"><span>02</span><span>Consumer FinTech · Android &amp; iOS</span><span>2026</span></div>
+          <div class="project-meta"><span>02</span><span>Consumer FinTech · Android + iOS Concept</span><span>2026</span></div>
           <h3>SBI Mindful Pocket</h3>
-          <p class="project-lede">A purpose-aware companion for State Bank of India (YONO) that converts digital doomscrolling pauses into compounding liquid micro-savings.</p>
+          <p class="project-lede">Turning intentional screen exits into healthier attention habits and small, transparent savings for students aged 18–24.</p>
           <div class="project-details">
-            <div><span>Core UX</span><p>Pre-session intent anchors, contextual 1-tap micro-saves (₹10/exit), and midnight impulse guardrails.</p></div>
-            <div><span>Mechanism</span><p>Frictionless micro-transfers into high-yield liquid funds (7.1% p.a.) tied to personalized student goal pockets.</p></div>
-            <div><span>Insights</span><p>Dual-impact dashboard linking psychological wellbeing (minutes reclaimed) with financial compounding velocity.</p></div>
+            <div><span>Core UX</span><p>Pre-session intent gating, 15-second mindful checkpoints, exit celebration, and habit-building Bytes.</p></div>
+            <div><span>Mechanism</span><p>Authorized daily UPI AutoPay aggregation into eligible liquid investments with cross-bank support (SBI, HDFC, ICICI, Axis).</p></div>
+            <div><span>Ethics</span><p>Respectful pauses without punitive lockouts or guilt; transparent distinction between pending saves and verified bank balances.</p></div>
           </div>
           <button type="button" class="project-link" onclick="openSbiModal()" aria-haspopup="dialog">Read full case study <span>↗</span></button>
         </div>
@@ -470,91 +470,174 @@
   </div>
 
   <!-- SBI Mindful Pocket Slide-Out Case Study Modal -->
-  <div id="sbi-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleBackdropClick(event)">
+  <div id="sbi-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sbi-modal-title" onclick="handleBackdropClick(event)">
     <div class="modal-drawer">
       <header class="modal-header">
         <div class="modal-title-wrap">
           <svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true">
             <path fill="#00b4d8" fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm0 35a14 14 0 0 1 14 14c0 6.3-4.16 11.64-9.9 13.4V100h-8.2V62.4c-5.74-1.76-9.9-7.1-9.9-13.4a14 14 0 0 1 14-14z"/>
           </svg>
-          <span id="modal-title">SBI Mindful Pocket · In-Depth Case Study</span>
+          <span id="sbi-modal-title">SBI Mindful Pocket · In-Depth Case Study</span>
         </div>
         <button type="button" class="modal-close-btn" onclick="closeSbiModal()" aria-label="Close case study">✕ Close (Esc)</button>
       </header>
 
-      <div class="modal-body" id="modal-body">
-        <p class="cs-eyebrow">FinTech · Behavioral Product Design · Android &amp; iOS Case Study</p>
+      <div class="modal-body" id="sbi-modal-body">
+        <p class="cs-eyebrow">FinTech / Behavioral Product Design / Student Wellbeing</p>
         <h2 class="cs-title">SBI Mindful Pocket</h2>
-        <p class="cs-subtitle">Reimagining Digital Wellbeing &amp; Micro-Wealth for Gen-Z</p>
+        <p class="cs-subtitle">Turning intentional screen exits into healthier attention habits and small, transparent savings.</p>
 
         <div class="cs-meta-grid">
+          <div class="cs-meta-item"><span>Scope</span><strong>UX/UI Portfolio Case Study</strong></div>
+          <div class="cs-meta-item"><span>Platform</span><strong>Android + iOS Concept</strong></div>
+          <div class="cs-meta-item"><span>Audience</span><strong>Students Aged 18–24</strong></div>
           <div class="cs-meta-item"><span>Role</span><strong>Lead Product Designer</strong></div>
-          <div class="cs-meta-item"><span>Platform</span><strong>Android &amp; iOS (Cross-Platform)</strong></div>
-          <div class="cs-meta-item"><span>Ecosystem</span><strong>SBI YONO Youth CSR (Concept)</strong></div>
-          <div class="cs-meta-item"><span>Research</span><strong>57 Surveyed · 8 Interviews</strong></div>
         </div>
+
+        <figure class="cs-figure">
+          <img src="assets/sbi_moodboard_flow.png" alt="SBI Mindful Pocket Moodboard, Settings and Linked Account Flow" loading="lazy">
+          <figcaption>Moodboard, Design Language &amp; Settings/Linked Account Flow: A calm, rewarding space helping students break the doomscroll loop and build real savings.</figcaption>
+        </figure>
 
         <div class="cs-card">
-          <h4>Executive Summary</h4>
-          <p>College students open social media for legitimate tasks (DMs, project coordination, sketch references), but algorithmic feeds hijack their attention. <strong>78% of students exceed intended screen time</strong>, displacing sleep and triggering late-night impulse spends.</p>
-          <p>Existing screen-time blockers fail because they rely on punitive lockouts and moral shaming. <strong>SBI Mindful Pocket inverts this paradigm through behavioral economics:</strong></p>
-          <ol style="margin: 10px 0 0 18px; padding: 0; font-size: 14px; line-height: 1.6;">
-            <li><strong>Protect:</strong> Anchors user intent in 2 seconds and gates late-night impulse checkouts.</li>
-            <li><strong>Replace:</strong> Replaces mindless dopamine loops with 15-second financial curiosity bytes.</li>
-            <li><strong>Reward:</strong> Converts saved time into real money via automated ₹10 micro-exits into high-yield liquid vaults.</li>
-          </ol>
+          <h4>The Design Challenge</h4>
+          <p style="font-size:16px; font-weight:700; color:var(--ink); margin-bottom:12px;">How might we help students leave an infinite scroll without shame—and convert the moment of self-control into an achievable financial habit?</p>
+          <div class="cs-disclaimer" style="margin:0;">
+            <strong>Important Concept Disclaimer:</strong> Conceptual extension of the SBI YONO ecosystem. Not an SBI product, confirmed partnership, approved investment offering, or live banking integration.
+          </div>
         </div>
 
         <div class="cs-section">
-          <h3>1. Context &amp; Opportunity Space</h3>
-          <p>College students (18–24) live in a hyper-connected environment where communication is co-located with entertainment. Students cannot simply delete these apps without social and academic penalties.</p>
-          <p><strong>The Hidden Financial Drain:</strong> Between 11:00 PM and 2:30 AM, fatigue depletes prefrontal inhibitory control, driving impulsive midnight food delivery orders and unplanned fast-fashion purchases. Students lose sleep and build zero savings momentum.</p>
-          <p><strong>Strategic Value for SBI:</strong> Capturing early Gen-Z users before private neobanks, driving recurring CASA micro-deposits, and establishing ethical banking leadership.</p>
+          <h3>01 / The Opportunity</h3>
+          <p>Students use social platforms for genuine reasons: class messages, project coordination, inspiration and friendships. The problem is not opening an app; it is losing track of why they opened it. An intended two-minute check can easily become a prolonged reel session.</p>
+          
+          <div class="cs-flow-box">
+            <h5>Problem Statement</h5>
+            <p>Traditional screen-time blockers are either easy to bypass or feel punitive and patronizing. Students need a respectful pause that preserves legitimate access and makes exiting feel rewarding—not like a personal failure.</p>
+          </div>
+
+          <div class="cs-flow-box" style="border-left:3px solid var(--blue);">
+            <h5>Concept in One Sentence</h5>
+            <p><strong>Mindful Pocket</strong> asks students to name their intention, intervenes at configurable moments, and records a small savings commitment whenever they choose to exit with intent.</p>
+          </div>
+
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>Audience</th><td>18–24-year-old students with social media and pocket-money habits</td></tr>
+              <tr><th>Role</th><td>Lead Product Designer (portfolio concept exploration)</td></tr>
+              <tr><th>Research Supplied</th><td>57 survey responses; 8 qualitative interviews (U1–U8)</td></tr>
+              <tr><th>Design Outputs</th><td>Onboarding, intent gate, checkpoint, exit bridge, money dashboard, Bytes, account/settings flows</td></tr>
+              <tr><th>Status</th><td>Portfolio concept; proposed technical and financial integrations require validation</td></tr>
+            </table>
+          </div>
         </div>
 
         <div class="cs-section">
-          <h3>2. Primary Research Synthesis</h3>
-          <p>Built upon a 57-respondent quantitative survey and 8 qualitative interviews (U1–U8):</p>
+          <h3>02 / Research → Evidence</h3>
+          <p>Findings from the project's primary quantitative survey (57 respondents) and 8 in-depth student interviews:</p>
+          
           <div class="cs-stats-grid">
-            <div class="cs-stat-box"><strong>78%</strong><span>Exceeded planned visit duration</span></div>
-            <div class="cs-stat-box"><strong>33%</strong><span>Displaced sleep as top casualty</span></div>
-            <div class="cs-stat-box"><strong>42%</strong><span>Stopped only on "clock shock"</span></div>
+            <div class="cs-stat-box"><strong>78%</strong><span>Reported exceeding intended visit duration</span></div>
+            <div class="cs-stat-box"><strong>33%</strong><span>Identified displaced sleep as leading casualty</span></div>
+            <div class="cs-stat-box"><strong>42%</strong><span>Reported stopping only on 'clock shock'</span></div>
             <div class="cs-stat-box"><strong>30%</strong><span>Opened app solely to reply to a DM</span></div>
           </div>
 
           <div class="cs-quote">
-            <p>"Bas sone se pehle ek baar last time Insta check kar leti hu, kya kya messages aaye hain... I spent genuinely two hours watching Reels."</p>
+            <p>"Bas sone se pehle ek baar last time Insta check kar leti hu… I spent genuinely two hours watching Reels."</p>
             <cite>— Participant U6 (The Bedtime DM Trap)</cite>
           </div>
           <div class="cs-quote">
-            <p>"Aadha ghanta socha tha, phone screen par 1:40 AM dekha to shock laga. No app warns you nicely; they just lock you out, which makes me angry so I bypass the limit."</p>
+            <p>"I thought half an hour; when I saw 1:40 AM, I was shocked… strict lockouts make me bypass the limit."</p>
             <cite>— Participant U1 (The Clock Shock)</cite>
           </div>
-        </div>
 
-        <div class="cs-section">
-          <h3>3. Behavioral Economics Architecture</h3>
           <div class="cs-flow-box">
-            <h5>1. Implementation Intentions (Peter Gollwitzer)</h5>
-            <p>Explicitly declaring intent before encountering a stimulus doubles goal attainment. A 2-second prompt ("What's your purpose right now?") activates conscious System 2 awareness.</p>
-          </div>
-          <div class="cs-flow-box">
-            <h5>2. Micro-Friction as Cognitive Reset (BJ Fogg)</h5>
-            <p>A 10–15 second pause breaks the automatic dopamine loop without forcing an aggressive block, giving the prefrontal cortex time to re-evaluate.</p>
-          </div>
-          <div class="cs-flow-box">
-            <h5>3. Loss Aversion Reframing (Kahneman &amp; Tversky)</h5>
-            <p>Instead of shame ("You failed your limit"), the exit is framed as an instant win: "+₹10 saved to your Goa Trip Fund &amp; 30 minutes of deep sleep protected."</p>
-          </div>
-          <div class="cs-flow-box">
-            <h5>4. Frictionless Internal Sweeps (RBI Norms)</h5>
-            <p>Under Indian banking guidelines, external transactions require 2FA/OTP. SBI Mindful Pocket utilizes internal smart sweeps between primary savings and liquid sub-accounts, executing in 1-tap with zero OTP friction.</p>
+            <h5>Key Synthesized Insights</h5>
+            <ul style="margin:8px 0 0 16px; padding:0; font-size:13px; line-height:1.6; color:#484640;">
+              <li><strong>Co-located Tasks:</strong> Intentional and unintentional use occur inside the exact same app; indiscriminate blocking creates friction for legitimate study tasks.</li>
+              <li><strong>Agency over Interruption:</strong> A gentle time checkpoint is better aligned with student autonomy than a scolding interruption.</li>
+              <li><strong>Late-Night Vulnerability:</strong> Sleep displacement and midnight impulsivity are promising contextual intervention points.</li>
+              <li><strong>Non-Punitive Savings:</strong> Small, visible money goals reinforce self-control only if debits are optional, capped, and never framed as a penalty.</li>
+            </ul>
           </div>
         </div>
 
         <div class="cs-section">
-          <h3>4. UI Execution &amp; High-Fidelity Screens</h3>
-          <p>The companion interfaces natively across Android and iOS via Digital Wellbeing and Screen Time APIs to provide contextual bridges and financial compounding insights.</p>
+          <h3>03 / Strategy and Principles</h3>
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>PROTECT</th><td>Ask "Why are you opening Instagram?" and allow a legitimate reason (e.g. replying to a DM).</td></tr>
+              <tr><th>RESET</th><td>Offer a 15-second checkpoint after a student-selected interval (e.g. 15 mins).</td></tr>
+              <tr><th>REWARD</th><td>Mark an intentional exit as a win and record a configurable pending save (+₹10).</td></tr>
+              <tr><th>COMPOUND</th><td>Collect authorized accumulated savings on an agreed schedule; show transfer and investment states distinctly.</td></tr>
+            </table>
+          </div>
+
+          <div class="cs-flow-box">
+            <h5>Behavioral Design Rationale</h5>
+            <p><strong>Implementation Intentions:</strong> Asking users to specify their purpose before stimulus exposure activates conscious System 2 awareness.<br>
+            <strong>Micro-Friction:</strong> A short reflective pause breaks automated dopamine loops without forced lockouts.<br>
+            <strong>Positive Reinforcement:</strong> Associating exits with tangible goal progress (Goa Trip Fund, Laptop Fund).<br>
+            <strong>Autonomy &amp; Reversibility:</strong> Students can defer checkpoints, edit savings amounts, or pause automation anytime.</p>
+          </div>
+
+          <div class="cs-disclaimer">
+            <strong>Ethical Guardrails:</strong> Avoid shaming vocabulary like "addicted", "failed", or deceptive streak pressure. Saving must be opt-in, capped, and affordable. Never withdraw money merely because a student stays in an app; never claim a deposit or investment before transaction confirmation.
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>04 / Core User Journey</h3>
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>1. Set up</th><td>Choose apps, goals, reminder interval, quiet hours and saving amount (e.g. ₹10/exit, ₹100 daily cap).</td></tr>
+              <tr><th>2. Name intent</th><td>Select DM, post, research, or mindful break (or skip intent prompt).</td></tr>
+              <tr><th>3. Check in</th><td>After the configured period, choose to exit, take a short pause, or continue.</td></tr>
+              <tr><th>4. Celebrate</th><td>Successful exit creates a pending ₹10 commitment and calculates estimated time saved.</td></tr>
+              <tr><th>5. Collect</th><td>An authorized daily UPI AutoPay mandate or supported bank transfer processes eligible amounts once daily.</td></tr>
+              <tr><th>6. Review</th><td>Dashboard cleanly separates pending commitments, successful debits, investment units, and redemptions.</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>05 / Information Architecture &amp; Critical Microcopy</h3>
+          <p>A compact three-tab bottom navigation keeps the primary mental loop effortless: <strong>Home</strong>, <strong>Bytes</strong>, and <strong>Profile</strong>.</p>
+          
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>Home</th><td>Time saved • mindful exits • pending savings • active goals • confirmed balance</td></tr>
+              <tr><th>Bytes</th><td>Short financial learning content; finite scroll with natural stopping points (no doomscroll)</td></tr>
+              <tr><th>Profile</th><td>App controls • linked accounts • money rules • mandates • notifications • privacy &amp; help</td></tr>
+              <tr><th>Linked Accounts</th><td>Add/verify bank • choose funding account • view account availability</td></tr>
+              <tr><th>Mandates</th><td>Create UPI AutoPay • authorized cap • frequency • pause/revoke • transaction logs</td></tr>
+              <tr><th>Focus Stash</th><td>Goal tracking • pending commitment • transferred total • invested units • redemption</td></tr>
+            </table>
+          </div>
+
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Context</th><th>Mandatory Microcopy Standard</th></tr></thead>
+              <tr><th>After app exit</th><td>"Nice choice. ₹10 added to your next savings collection."</td></tr>
+              <tr><th>Before authorization</th><td>"Allow up to ₹100 per day, collected once daily. You can pause anytime."</td></tr>
+              <tr><th>After successful debit</th><td>"₹40 transferred successfully."</td></tr>
+              <tr><th>While order is pending</th><td>"Investment order submitted. Units will appear after processing."</td></tr>
+              <tr><th>Investment details</th><td>"Returns are market-linked and not guaranteed."</td></tr>
+              <tr><th>Failed mandate</th><td>"No money moved. Update your payment method or try later."</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>06 / Screen Designs and Working Wireframes</h3>
+          <p>Low-fidelity explorations mapping a coherent end-to-end journey: onboarding, risky-time selection, goal setup, pre-session intent gate, checkpoint, educational Byte, exit bridge, and Profile controls.</p>
+
+          <figure class="cs-figure">
+            <img src="assets/sbi_wireframes_flow.png" alt="Provided screen flow: onboarding to intent checkpoint, Focus Stash and Profile" loading="lazy">
+            <figcaption>Figure 1. Provided screen flow: onboarding to intent checkpoint, Focus Stash and Profile. Original working wireframes supplied by project owner.</figcaption>
+          </figure>
+
           <div class="cs-screens-grid">
             <div class="cs-screen-item">
               <img src="assets/sbi_dashboard_preview.png" alt="SBI Mindful Pocket Dual-Impact Dashboard" loading="lazy">
@@ -568,35 +651,106 @@
         </div>
 
         <div class="cs-section">
-          <h3>5. Technical Feasibility &amp; Compliance</h3>
-          <p><strong>Cross-Platform Wellbeing Integration:</strong> On Android, leverages <code>UsageStatsManager</code> and Accessibility Service triggers for intent gating; on iOS, integrates Apple's <code>FamilyControls</code> and <code>ManagedSettings</code> framework for native shield configuration within the OS privacy sandbox without private telemetry leaks.</p>
-          <p><strong>RBI-Compliant Micro-Sweeps:</strong> The Focus Stash functions as an internal recurring liquid sub-account (Sweep-in / Sweep-out Liquid RD) under the customer ID. Users authorize an initial e-Mandate during onboarding, allowing single-tap ₹10 micro-saves without OTP prompts.</p>
+          <h3>07 / Financial Experience: SBI + Other Banks</h3>
+          <p>The product embraces a <strong>bank-inclusive model</strong>: students may use an SBI savings account or an eligible external bank account (HDFC, ICICI, Axis, PNB) as their funding source. The destination is a transparent, separately disclosed liquid savings or mutual fund investment product.</p>
+
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>A. Capture</th><td>Successful mindful exit increments pending savings commitment (+₹10). No money moves yet.</td></tr>
+              <tr><th>B. Aggregate</th><td>Commitments group into a daily collection amount, subject to student's daily maximum cap (e.g. ₹100).</td></tr>
+              <tr><th>C. Authorize</th><td>Student approves a supported UPI AutoPay recurring mandate or bank authorization during setup.</td></tr>
+              <tr><th>D. Execute</th><td>Payment provider attempts scheduled debit; failed debits are never shown as savings.</td></tr>
+              <tr><th>E. Invest (Optional)</th><td>If opted into an eligible liquid fund, investment order submits through a regulated partner.</td></tr>
+              <tr><th>F. Reconcile</th><td>UI displays pending commitments, transferred cash, order processing, and redeemable balance separately.</td></tr>
+            </table>
+          </div>
+
+          <figure class="cs-figure">
+            <img src="assets/sbi_crossbank_mandate_flow.png" alt="Conceptual high-fidelity exploration of proposed cross-bank funding and mandate flows" loading="lazy">
+            <figcaption>Figure 2. Conceptual high-fidelity exploration of proposed cross-bank funding and mandate flows. Illustrative screen content; provider-specific features need verification.</figcaption>
+          </figure>
         </div>
 
         <div class="cs-section">
-          <h3>6. Interview Defense &amp; FAQs</h3>
-          <div class="cs-qa">
-            <strong>Q1: Why not simply block the social apps entirely?</strong>
-            <p>30% of app opens are for legitimate communication (project group chats, family DMs). Punitive blockers cause psychological reactance—users get frustrated and delete the app. Mindful Pocket builds internal digital agency.</p>
+          <h3>08 / UI System and Interaction Language</h3>
+          <p>The visual direction balances institutional financial trust with an approachable, calm student environment—utilizing quiet whitespace, accessible typography, and restrained motion.</p>
+
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>Brand Expression</th><td>Calm, clear, friendly, financially trustworthy</td></tr>
+              <tr><th>Primary Colors</th><td>Deep Indigo (#1E3A8A), Electric Blue (#2563EB)</td></tr>
+              <tr><th>Positive Action</th><td>Mint Green (#10B981) for completed progress and confirmed transfers</td></tr>
+              <tr><th>Supporting Palette</th><td>Soft Lavender (#EDE9FE), Warm Off-White (#FAFAF9), Charcoal (#1F2937)</td></tr>
+              <tr><th>Typography</th><td>Inter / Manrope for crisp hierarchy and accessible mobile legibility</td></tr>
+              <tr><th>UI Patterns</th><td>Status chips, compact account cards, bottom sheets, non-color status indicators</td></tr>
+              <tr><th>Accessibility</th><td>44×44 pt touch targets, visible focus rings, reduced-motion fallbacks</td></tr>
+            </table>
           </div>
-          <div class="cs-qa">
-            <strong>Q2: Isn't micro-saving ₹10 too small for a bank like SBI?</strong>
-            <p>For a student, ₹10/day is frictionless. For SBI, ₹10/day across 10 million college students represents ₹10 Crore in daily sticky retail deposits (₹300 Crore/month) captured before private competitors acquire them.</p>
+
+          <div class="cs-flow-box">
+            <h5>Design Choices Worth Defending</h5>
+            <p><strong>15-Second Pause:</strong> Gives students a meaningful choice to disengage; avoids aggressive, irritating blocks.<br>
+            <strong>"Reply to DM" Intent Path:</strong> Recognizes that communication is legitimate and shouldn't be penalized.<br>
+            <strong>Dual Metric Dashboard:</strong> Places time saved and money stashed side by side, but never blurs behavioral estimates with verified bank balances.<br>
+            <strong>Finite Bytes Feed:</strong> Financial literacy cards have a distinct end point to ensure learning doesn't become another doomscroll.</p>
           </div>
-          <div class="cs-qa">
-            <strong>Q3: What makes this design ethical?</strong>
-            <p>Zero shaming vocabulary (no "Addiction" or "Failure"). The user always retains control with "Not Now" and "+2 Mindful Minutes" options on every checkpoint.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>09 / Feasibility, Risk, and Compliance</h3>
+          <p><strong>Cross-Platform OS Capabilities:</strong><br>
+          • <em>Android:</em> App-usage monitoring relies on <code>UsageStatsManager</code>. Interstitial prompts depend on OS permission grants and background restrictions; Accessibility Services cannot be used as a blanket interceptor without strict Google Play policy compliance.<br>
+          • <em>iOS:</em> Uses Apple's <code>FamilyControls</code> and <code>ManagedSettings</code> entitlements within the sandbox. Shield configurations provide native boundaries without reading private application data.</p>
+
+          <p><strong>Payments &amp; Investments Compliance:</strong><br>
+          • <em>UPI AutoPay &amp; e-Mandates:</em> Recurring debits follow NPCI and RBI e-mandate guidelines. Aggregating into a daily batch minimizes transaction failures and provider load.<br>
+          • <em>Liquid Mutual Funds:</em> Must clearly disclose AMFI risk notices: returns are market-linked and not guaranteed; NAV cutoffs and KYC requirements apply.<br>
+          • <em>Privacy:</em> Only aggregate device usage timestamps are accessed. Never inspect message contents, photos, or private communications.</p>
+        </div>
+
+        <div class="cs-section">
+          <h3>10 / Measurement and Validation</h3>
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <tr><th>Behavior</th><td>Share of sessions ended at intended checkpoint; median overrun minutes; voluntary pause usage</td></tr>
+              <tr><th>Wellbeing</th><td>Self-reported sleep quality, reduced bedtime phone stress, opt-out rates</td></tr>
+              <tr><th>Finances</th><td>Opt-in rate; authorized UPI mandates; successful daily collections; savings retention</td></tr>
+              <tr><th>Trust</th><td>Comprehension of pending vs invested funds; payment dispute rate; redemption velocity</td></tr>
+              <tr><th>Equity</th><td>Cross-bank success rates across devices (Android vs iOS); accessibility compliance</td></tr>
+            </table>
+          </div>
+
+          <div class="cs-flow-box">
+            <h5>Testing Plan</h5>
+            <p>1. Run 5–8 formative usability tests evaluating onboarding and intent selection.<br>
+            2. Conduct a 3-stage comprehension test asking users where ₹10 is: (a) after exit, (b) after debit, (c) after mutual fund allotment.<br>
+            3. A/B test a guilt-free checkpoint against a conventional hard-lockout to measure perceived agency.</p>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <h3>11 / Reflection &amp; Provenance</h3>
+          <p>The core insight of Mindful Pocket is that digital wellbeing and financial wellbeing share an identical behavioral challenge: <strong>helping people act in accordance with their long-term goals during moments of short-term impulse</strong>. The opportunity is not to monetize guilt, but to celebrate and reward self-regulation.</p>
+
+          <div class="cs-flow-box">
+            <h5>Official Research &amp; Regulatory Provenance</h5>
+            <p style="font-size:12px; color:var(--muted); line-height:1.6;">
+              • Primary research: 57 survey respondents, 8 in-depth interviews (U1–U8).<br>
+              • NPCI: "AutoPay facility on UPI for recurring payments" (Circular 2020).<br>
+              • Reserve Bank of India: "Processing of e-mandate in UPI for recurring transactions" (2020).<br>
+              • AMFI: "Risks in Mutual Funds" &amp; "Liquid Scheme Guidelines".<br>
+              • Apple Developer: "Requesting the Family Controls entitlement" (ManagedSettings framework).
+            </p>
           </div>
         </div>
 
         <div class="cs-footer-actions">
           <button type="button" class="button button-primary" onclick="closeSbiModal()">Finished reading</button>
-          <button type="button" class="button button-secondary" onclick="document.getElementById('modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
+          <button type="button" class="button button-secondary" onclick="document.getElementById('sbi-modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
         </div>
       </div>
     </div>
   </div>
-
   <script>
     function openLmModal() {
       const modal = document.getElementById('lm-modal');
