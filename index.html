@@ -118,7 +118,7 @@
             <div><span>Shipped</span><p>Dual-ERP auto-sync, multimodal vision pipeline for handwritten contractor receipts, tenant move-out doc compiler, and direct PDF audit linking.</p></div>
             <div><span>Impact</span><p>Compressed daily 5-hour manual bill entry into a 5-minute automated batch process (98% operational time reduction, self-measured on the daily bill-entry batch) with no reconciliation errors reported to date.</p></div>
           </div>
-          <button type="button" class="project-link" onclick="openLmModal()" aria-haspopup="dialog">Read full case study <span>↗</span></button>
+          <a class="project-link" href="work/ledgermate/">Read full case study <span>↗</span></a>
         </div>
       </article>
 
@@ -175,7 +175,7 @@
             <div><span>Mechanism</span><p>Authorized daily UPI AutoPay aggregation into eligible liquid investments with cross-bank support (SBI, HDFC, ICICI, Axis).</p></div>
             <div><span>Ethics</span><p>Respectful pauses without punitive lockouts or guilt; transparent distinction between pending saves and verified bank balances.</p></div>
           </div>
-          <button type="button" class="project-link" onclick="openSbiModal()" aria-haspopup="dialog">Read full case study <span>↗</span></button>
+          <a class="project-link" href="work/sbi-mindful-pocket/">Read full case study <span>↗</span></a>
         </div>
       </article>
 
@@ -378,431 +378,17 @@
 
   <footer class="site-footer shell"><div><span class="monogram">DK<span>.</span></span><p>Devgghya Kulshrestha<br>Product designer · FinTech &amp; automation</p></div><p>Designed with intent.<br>Built to be used.</p><p>Dehradun, India<br>© 2026</p></footer>
 
-  <!-- LedgerMate Slide-Out Case Study Modal -->
-  <div id="lm-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lm-modal-title" onclick="handleBackdropClick(event)">
-    <div class="modal-drawer">
-      <header class="modal-header">
-        <div class="modal-title-wrap">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--signal)">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-            <path d="M8 7h8"></path>
-            <path d="M8 11h8"></path>
-          </svg>
-          <span id="lm-modal-title">LedgerMate · In-Depth Case Study</span>
-        </div>
-        <button type="button" class="modal-close-btn" onclick="closeLmModal()" aria-label="Close case study">✕ Close (Esc)</button>
-      </header>
-
-      <div class="modal-body" id="lm-modal-body">
-        <p class="cs-eyebrow">B2B FinTech · Operational Automation · Enterprise Accounting Systems</p>
-        <h2 class="cs-title">LedgerMate</h2>
-        <p class="cs-subtitle">Eliminating the 5-Hour Daily Bookkeeping Grind for US Property Management</p>
-
-        <div class="cs-meta-grid">
-          <div class="cs-meta-item"><span>Role</span><strong>Product Engineer &amp; Architect</strong></div>
-          <div class="cs-meta-item"><span>Platform</span><strong>Cloud Pipeline &amp; Micro-SaaS</strong></div>
-          <div class="cs-meta-item"><span>Ecosystem</span><strong>QuickBooks · Buildium · RentVine</strong></div>
-          <div class="cs-meta-item"><span>Impact</span><strong>98% time saved · No errors reported to date</strong></div>
-        </div>
-
-        <div class="cs-card">
-          <h4>Executive Summary</h4>
-          <p>In US property management, accounting teams lose thousands of billable hours every month to a mind-numbing bottleneck: manually copying contractor invoices, utility bills, and repair expenses from tracking spreadsheets into General Ledger accounting platforms (QuickBooks Online) and operational property ERPs (RentVine, Buildium).</p>
-          <p>While working 40 hours/week as a junior accountant at a firm managing residential and commercial US property portfolios, I experienced this daily friction firsthand. Rather than accepting 4–5 hours of daily copy-pasting as inevitable, I designed and engineered <strong>LedgerMate</strong>: a modular, multi-ERP automation platform and AI-powered document ingestion pipeline.</p>
-          <p><strong>The Core Breakthroughs:</strong></p>
-          <ol style="margin: 10px 0 0 18px; padding: 0; font-size: 14px; line-height: 1.6;">
-            <li><strong>Dual-ERP Sync:</strong> Google Sheets → QuickBooks Online + RentVine/Buildium in a single atomic pass with direct PDF evidence linking.</li>
-            <li><strong>Multimodal Handwritten OCR:</strong> AI vision pipeline parsing messy handwritten contractor/handyman receipts directly into structured accounting records.</li>
-            <li><strong>Tenant Move-Out Pack:</strong> 1-click automated assembly of move-out invoices, deposit deduction calculations, and utility prorations.</li>
-            <li><strong>Results:</strong> Compressed a 5-hour daily manual transcription grind into a 5-minute automated batch execution (<strong>98% operational time reduction</strong>, self-measured on the daily bill-entry batch) with every entry traceable to its source PDF.</li>
-          </ol>
-        </div>
-
-        <div class="cs-section">
-          <h3>1. The Origin: Learning the workflow from the inside</h3>
-          <p>Most FinTech designers design interfaces from secondary research or aesthetic Dribbble shots without ever touching a General Ledger or reconciling a bank feed.</p>
-          <p>With a 10+2 commerce foundation, I joined an accounting firm managing back-office books for US property portfolios. My daily reality was pure manual transcription for 40 hours a week: copying rows from Google Sheets, creating Bills in QuickBooks Online, assigning Chart of Accounts GL codes, posting duplicate charges into Buildium/RentVine, and hunting down PDF receipts across fragmented folders.</p>
-          <p><strong>The Friction Multiplier:</strong> A single misclassified GL code created tax headaches for property owners. Misplaced PDF receipts caused audit panic. And 4–5 hours of every single workday were lost to mechanical typing.</p>
-
-          <div class="cs-screens-grid">
-            <div class="cs-screen-item">
-              <img src="assets/ledgermate_laptop_crop.png" alt="LedgerMate Operational Dashboard" loading="lazy">
-              <span>LedgerMate Operational Dashboard</span>
-            </div>
-            <div class="cs-screen-item">
-              <img src="assets/ledgermate_workstation_preview.png" alt="Dual-Monitor Bookkeeping Workstation: Spreadsheets vs VS Code" loading="lazy">
-              <span>Workstation: Spreadsheets vs VS Code</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cs-section">
-          <h3>2. The Turning Point: "Design with and for AI"</h3>
-          <p>While studying User Experience Design at Graphic Era University, I took <em>Design with and for AI</em> taught by <strong>Associate Professor Samarth Reddy</strong>. The core realization: <em>Design is not just visual styling—it is system architecture. A designer who understands information models can use modern AI code synthesis to engineer working software.</em></p>
-          <p>Armed with deep domain knowledge of property bookkeeping and powered by VS Code and GitHub Copilot, I began engineering LedgerMate to solve my own daily professional agony.</p>
-        </div>
-
-        <div class="cs-section">
-          <h3>3. Core Engineering &amp; The Three Automation Pipelines</h3>
-          
-          <div class="cs-flow-box">
-            <h5>1. Bi-Directional Multi-ERP Sync &amp; Direct Evidence Linking</h5>
-            <p>Reads unbilled rows from Google Sheets, validates schemas, creates bills in QuickBooks Online (corporate GL), posts unit charges in Buildium/RentVine, embeds PDF proofs directly via binary API endpoints (no Google Drive links), and writes back the generated transaction IDs with a 'Done' flag.</p>
-          </div>
-
-          <div class="cs-flow-box">
-            <h5>2. Multimodal Vision OCR for Handwritten Contractor Invoices</h5>
-            <p>Local plumbers, lawn care teams, and handymen frequently submit handwritten carbon paper receipts with scribbled line items. LedgerMate integrates a multimodal vision extraction pipeline that parses handwritten notes, separates labor from parts, extracts totals, and stages structured JSON directly into Buildium.</p>
-          </div>
-
-          <div class="cs-flow-box">
-            <h5>3. Automated Tenant Move-Out (MO) Document Assembly</h5>
-            <p>When a tenant vacates, property managers face strict statutory deadlines to return security deposits. LedgerMate synthesizes move-out inspection checklists, outstanding utility ledgers, and repair deductions to compile a standardized, audit-ready Move-Out Statement and reconciliation letter in under 30 seconds.</p>
-          </div>
-        </div>
-
-        <div class="cs-section">
-          <h3>4. Reliability &amp; Security</h3>
-          <p><strong>Atomic Batching &amp; Exception Queues:</strong> If 1 bill out of 75 fails (e.g. an unmapped vendor name or missing unit number), LedgerMate isolates the exception into an interactive review queue while successfully processing the other 74 rows without crashing the batch.</p>
-          <p><strong>Idempotency Safeguards:</strong> Unique composite hashing (Vendor + Invoice# + Property ID + Amount) mathematically prevents duplicate bills even if a user triggers sync multiple times.</p>
-          <p><strong>Licensing &amp; Remote Kill-Switch:</strong> Built a client portal with usage metrics, token encryption, and an administrative license switch ensuring proprietary business logic remains secure.</p>
-        </div>
-
-        <div class="cs-section">
-          <h3>5. Quantifiable Business Impact &amp; ROI</h3>
-          <div class="cs-stats-grid">
-            <div class="cs-stat-box"><strong>98%</strong><span>Time saved (daily batch)</span></div>
-            <div class="cs-stat-box"><strong>0</strong><span>Reconciliation errors reported to date</span></div>
-            <div class="cs-stat-box"><strong>100%</strong><span>Direct PDF proof linked</span></div>
-            <div class="cs-stat-box"><strong>~100 hrs</strong><span>Estimated monthly time saved</span></div>
-          </div>
-
-          <p style="font-size:15px;line-height:1.6;color:#333;border-left:3px solid var(--ink);padding-left:16px;margin:20px 0;">
-            I hadn't joined the firm just to do data entry; I joined to dissect the mechanical reality of financial systems from the inside. Once I built the system, I understood the leverage of software automation.
-          </p>
-        </div>
-
-        <div class="cs-section">
-          <h3>6. Where it goes next</h3>
-          <p>The connectors are modular, so each integration can be adapted to other property-management workflows. A licensing layer (usage metrics, token encryption, an admin license switch) supports a SaaS model.</p>
-        </div>
-
-        <div class="cs-section">
-          <h3>7. Decisions &amp; trade-offs</h3>
-          <div class="cs-qa">
-            <strong>Q1: Why not simply use off-the-shelf tools like Zapier or Make.com?</strong>
-            <p>Off-the-shelf iPaaS platforms are brittle for dual-ERP property accounting. Zapier charges steep fees at high transaction volume, lacks atomic batch rollback, and cannot handle complex hierarchical mappings (matching a contractor invoice to a specific property and unit in Buildium while simultaneously debiting the correct GL Chart of Accounts in QuickBooks Online). Furthermore, Zapier cannot handle multimodal handwritten invoice parsing or automated Move-Out PDF document compilation out of the box.</p>
-          </div>
-          <div class="cs-qa">
-            <strong>Q2: How did you ensure data integrity between QuickBooks and Buildium?</strong>
-            <p>LedgerMate enforces a strict two-phase commit pattern. The payload is validated, posted to QuickBooks Online to capture the generated TxnId, and only upon an HTTP 200/201 response is the unit charge posted to Buildium/RentVine, cross-referencing both IDs before marking the spreadsheet row as Done. If any endpoint fails, the transaction is flagged in the exception queue for manual resolution rather than corrupting the ledger.</p>
-          </div>
-          <div class="cs-qa">
-            <strong>How was this built without a CS background?</strong>
-            <p>Domain knowledge let me specify the exact system logic (debits, credits, vendor terms, property operations) and review AI-generated code against it. AI coding tools did the typing; the information architecture and the checks were mine.</p>
-          </div>
-        </div>
-
-        <div class="cs-footer-actions">
-          <button type="button" class="button button-primary" onclick="closeLmModal()">Finished reading</button>
-          <button type="button" class="button button-secondary" onclick="document.getElementById('lm-modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SBI Mindful Pocket Slide-Out Case Study Modal -->
-  <div id="sbi-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sbi-modal-title" onclick="handleBackdropClick(event)">
-    <div class="modal-drawer">
-      <header class="modal-header">
-        <div class="modal-title-wrap">
-          <svg viewBox="0 0 100 100" width="18" height="18" aria-hidden="true">
-            <path fill="#38bdf8" fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm0 35a14 14 0 0 1 14 14c0 6.3-4.16 11.64-9.9 13.4V100h-8.2V62.4c-5.74-1.76-9.9-7.1-9.9-13.4a14 14 0 0 1 14-14z"/>
-          </svg>
-          <span id="sbi-modal-title">SBI Mindful Pocket · In-Depth Case Study</span>
-        </div>
-        <button type="button" class="modal-close-btn" onclick="closeSbiModal()" aria-label="Close case study">✕ Close (Esc)</button>
-      </header>
-
-      <div class="modal-body" id="sbi-modal-body">
-        <p class="cs-eyebrow">FinTech / Behavioral Product Design / SBI YONO Concept</p>
-        <h2 class="cs-title">SBI Mindful Pocket</h2>
-        <p class="cs-subtitle">Converting late-night doomscroll friction into compounding micro-savings (+₹10/save) for students aged 18–24.</p>
-
-        <div class="cs-meta-grid">
-          <div class="cs-meta-item"><span>Role</span><strong>Lead Product Designer</strong></div>
-          <div class="cs-meta-item"><span>Target Audience</span><strong>18–24 College Students (Android + iOS)</strong></div>
-          <div class="cs-meta-item"><span>Banking Architecture</span><strong>SBI YONO + UPI AutoPay (Cross-Bank)</strong></div>
-          <div class="cs-meta-item"><span>Success metric (planned)</span><strong>Share of sessions ended at intended checkpoint</strong></div>
-        </div>
-
-        <!-- Full-Resolution Hero Visual Banner -->
-        <figure class="cs-figure">
-          <img src="assets/sbi_moodboard_flow.png" alt="SBI Mindful Pocket Design Language & Flow" loading="lazy" class="zoomable-img">
-          <figcaption>Figure 1. The Design System &amp; Product Language: A calm, high-trust banking environment converting social media impulse into liquid wealth. Click image to inspect in full resolution.</figcaption>
-        </figure>
-
-        <div class="cs-card">
-          <h4>The Core Problem</h4>
-          <p style="font-size:16px; font-weight:700; color:var(--ink); margin-bottom:12px;">"How might we help students leave an infinite scroll without shame—and convert that moment of self-control into an automatic, compounding financial habit?"</p>
-          <div class="cs-disclaimer" style="margin:0;">
-            <strong>Banking Concept Disclaimer:</strong> Conceptual design extension for the SBI YONO ecosystem. Not an official State Bank of India release, approved investment product, or confirmed corporate partnership.
-          </div>
-        </div>
-
-        <!-- ACT 1: THE HOOK -->
-        <div class="cs-act-section">
-          <div class="cs-act-badge">🎬 ACT 1: THE HOOK</div>
-          <h3 class="cs-act-title">The Midnight Scroll &amp; Micro-Leakage Trap</h3>
-          <p class="cs-lead-text">College students don't open Instagram with the intention of losing two hours. They open it to reply to a classmate's project message. But the algorithmic feed intercepts their attention—turning a 2-minute check-in into a late-night trance that destroys sleep and accelerates impulsive UPI food orders and checkout spending.</p>
-
-          <div class="cs-stats-grid" style="grid-template-columns:repeat(2,1fr);max-width:560px;">
-            <div class="cs-stat-box"><strong>42%</strong><span>Stop only upon acute 'Clock Shock' (1:40 AM)</span></div>
-            <div class="cs-stat-box"><strong>30%</strong><span>Opened app solely to reply to a single DM</span></div>
-          </div>
-          <p style="margin:10px 0 24px;font-size:11px;color:var(--muted);letter-spacing:.05em;">Primary survey, n = 57 · 8 interviews</p>
-
-          <div class="cs-quotes-pair">
-            <div class="cs-quote">
-              <p>"Bas sone se pehle ek baar last time Insta check kar leti hu… I spent genuinely two hours watching Reels without realizing."</p>
-              <cite>— Participant U6 (The Bedtime DM Trap · Graphic Era University)</cite>
-            </div>
-            <div class="cs-quote">
-              <p>"I thought I'd spend half an hour. When I looked at the clock and saw 1:40 AM, I felt pure shock. Hard screen lockouts just make me hit 'Ignore for 15 minutes'."</p>
-              <cite>— Participant U1 (The Clock Shock &amp; Limit Bypass)</cite>
-            </div>
-          </div>
-        </div>
-
-        <!-- ACT 2: THE HIGH-ANXIETY FRICTION -->
-        <div class="cs-act-section">
-          <div class="cs-act-badge">⚡ ACT 2: THE HIGH-ANXIETY FRICTION</div>
-          <h3 class="cs-act-title">Why Existing Systems &amp; Traditional Banking Fail</h3>
-          
-          <div class="cs-flow-box">
-            <h5>1. The Blocker Paradox (Punitive Shame Fails)</h5>
-            <p>Built-in screen-time tools are easy to dismiss and can feel punitive or patronising. In interviews, students described bypassing strict limits (see U1 below).</p>
-          </div>
-
-          <div class="cs-flow-box">
-            <h5>2. The Co-Located Task Conflict</h5>
-            <p>Students cannot delete or blindly block Instagram because university societies, course groups, and peer DMs live there. Indiscriminate app blocking creates acute operational friction for genuine college responsibilities.</p>
-          </div>
-
-          <div class="cs-flow-box">
-            <h5>3. The FinTech Wall for Gen-Z</h5>
-            <p>Typical investing apps require KYC and PAN onboarding and often set minimum amounts that feel large against a student's pocket money. (Validation note: specific minimums and pocket-money figures require formal market sampling).</p>
-          </div>
-        </div>
-
-        <!-- ACT 3: THE UI RESOLUTION -->
-        <div class="cs-act-section">
-          <div class="cs-act-badge">🚀 ACT 3: THE UI RESOLUTION</div>
-          <h3 class="cs-act-title">The Mindful Loop: From Impulse to Compounding Wealth</h3>
-          <p class="cs-lead-text">Mindful Pocket inverts the friction model. Instead of punishing app usage, it treats every intentional exit as a high-agency victory—instantly rewarding the student with a tangible +₹10 micro-saving into a liquid vault.</p>
-
-          <div class="cs-walkthrough-block">
-            <div class="cs-walkthrough-header">
-              <span class="cs-step-tag">Step 01 &amp; 02 · Screen Walkthrough</span>
-              <h4>Pre-Session Intent Gating &amp; The 15-Second Mindful Checkpoint</h4>
-              <p>Activating System 2 deliberate thinking before dopamine capture occurs, followed by an autonomous exit bridge.</p>
-            </div>
-
-            <div style="background:var(--paper-alt);border:1px solid var(--line);padding:24px;border-radius:6px;margin:24px 0 32px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
-                <strong style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;">High-Fidelity Wireframes · Post-Wireframe Stage</strong>
-                <span style="font-size:10px;background:var(--signal);color:var(--ink);padding:4px 8px;font-weight:800;border-radius:3px;text-transform:uppercase;">Visual Design in Progress</span>
-              </div>
-              <p style="font-size:13px;line-height:1.5;color:var(--muted);margin:0 0 20px;">
-                This project represents completed behavioral architecture and high-fidelity wireframes. Visual design and production token systems are in progress. Click any wireframe to inspect in full resolution.
-              </p>
-              <div class="cs-screens-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_welcome.png" alt="SBI Mindful Pocket Welcome & Onboarding Wireframe" class="zoomable-img" loading="lazy">
-                  <span>1. Onboarding &amp; Setup</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_goal_setup.png" alt="SBI Goal Setup & Micro-Save Target Wireframe" class="zoomable-img" loading="lazy">
-                  <span>2. Goal Setup (+₹10 Save)</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_intent_gate.png" alt="SBI Intent Gating Screen Wireframe" class="zoomable-img" loading="lazy">
-                  <span>3. Pre-Session Intent Gate</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_triggers.png" alt="SBI App Intervention Trigger Select Wireframe" class="zoomable-img" loading="lazy">
-                  <span>4. Trigger App Selection</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_checkpoint.png" alt="SBI Checkpoint Prompt Wireframe" class="zoomable-img" loading="lazy">
-                  <span>5. Checkpoint Reflection</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_breathing_pause.png" alt="SBI 15-Second Breathing Pause Wireframe" class="zoomable-img" loading="lazy">
-                  <span>6. 15-Sec Breathing Pause</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_exit_celebration.png" alt="SBI Exit Celebration & Micro-Save Wireframe" class="zoomable-img" loading="lazy">
-                  <span>7. Exit Celebration (+₹10)</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_dashboard.png" alt="SBI Micro-Savings Dashboard Wireframe" class="zoomable-img" loading="lazy">
-                  <span>8. Dual Progress Dashboard</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_bytes_feed.png" alt="SBI Habit-building Bytes Feed Wireframe" class="zoomable-img" loading="lazy">
-                  <span>9. Financial Bytes Feed</span>
-                </div>
-                <div class="cs-screen-item">
-                  <img src="assets/sbi_wireframes/sbi_wf_settings.png" alt="SBI Settings & Mandate Controls Wireframe" class="zoomable-img" loading="lazy">
-                  <span>10. Cap &amp; Mandate Settings</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="cs-flow-box">
-              <h5>Behavioral Interaction Details</h5>
-              <ul style="margin:8px 0 0 16px; padding:0; font-size:13.5px; line-height:1.6; color:#484640;">
-                <li><strong>Intent Gating:</strong> On opening a monitored app, an unobtrusive 1-tap sheet asks: <em>"What is your intention?"</em> Options like <em>"Reply to DM"</em> allow instant access without scolding.</li>
-                <li><strong>15-Second Breath Cue:</strong> At the student's selected milestone (e.g. 15 min), a gentle ambient pulse introduces a reflective pause. No jarring crash or locked screen.</li>
-                <li><strong>Uncompromised Student Autonomy:</strong> The user has two explicit choices: <em>"Continue Mindfully"</em> (zero guilt, no lockouts) or <em>"Exit &amp; Stash (+₹10)"</em>.</li>
-                <li><strong>Immediate Dopamine Replacement:</strong> Exiting triggers an instant celebration animation: +₹10 credited to the student's personal goal (e.g., Goa Trip Fund, Laptop Stash).</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="cs-walkthrough-block">
-            <div class="cs-walkthrough-header">
-              <span class="cs-step-tag">Step 03 · System Architecture</span>
-              <h4>Complete Information Architecture &amp; Wireframe Progression</h4>
-              <p>A compact 3-tab bottom navigation (Home · Bytes · Profile) designed to prevent secondary doomscrolling within the banking app itself.</p>
-            </div>
-
-            <figure class="cs-figure">
-              <img src="assets/sbi_wireframes_flow.png" alt="SBI Mindful Pocket Wireframe Flows" loading="lazy" class="zoomable-img">
-              <figcaption>Figure 4. End-to-end low-fidelity to high-fidelity wireframe progression: onboarding, risky-hours configuration, goal setup, intent gating, checkpoint, and profile settings. Click to inspect full wireframes.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- ACT 4: THE BANKING BUSINESS CLIMAX -->
-        <div class="cs-act-section">
-          <div class="cs-act-badge">04 / The business case</div>
-          <h3 class="cs-act-title">Business case (hypotheses to validate)</h3>
-          <p class="cs-lead-text">A sustainable product also has to work for the bank. The points below are hypotheses, not measured results.</p>
-
-          <div class="cs-business-grid">
-            <div class="cs-biz-card">
-              <div class="cs-biz-num">01 / CASA DEPOSITS</div>
-              <h4>Early Primary-Bank Relationship</h4>
-              <p>Hypothesis: an early student relationship could build primary-bank loyalty, with small daily savings pooling at low acquisition cost. (Open design decision: CASA deposit vs. liquid fund sweep; both models explored).</p>
-            </div>
-
-            <div class="cs-biz-card">
-              <div class="cs-biz-num">02 / LTV EXPANSION</div>
-              <h4>Long-Term Product Affinity</h4>
-              <p>Hypothesis: an early primary-bank relationship could support later products such as education loans and cards. Untested.</p>
-            </div>
-
-            <div class="cs-biz-card">
-              <div class="cs-biz-num">03 / ECOSYSTEM</div>
-              <h4>Brand-Sponsored Savings Milestones</h4>
-              <p>Hypothesis: partner-funded rewards could boost savings milestones. Sponsorship terms are untested.</p>
-            </div>
-
-            <div class="cs-biz-card">
-              <div class="cs-biz-num">04 / INFRASTRUCTURE</div>
-              <h4>Batch UPI Settlement Design</h4>
-              <p>Batching the day's micro-saves into one collection (capped at ₹100) means far fewer individual mandate transactions than charging ₹10 per exit.</p>
-            </div>
-          </div>
-
-          <div class="cs-walkthrough-block">
-            <div class="cs-walkthrough-header">
-              <span class="cs-step-tag">Banking Architecture</span>
-              <h4>Cross-Bank Funding &amp; NPCI e-Mandate Pipeline</h4>
-              <p>Students can fund their Mindful Pocket from any Indian bank (SBI, HDFC, ICICI, Axis) via an authorized daily recurring mandate.</p>
-            </div>
-
-            <figure class="cs-figure">
-              <img src="assets/sbi_crossbank_mandate_flow.png" alt="SBI Cross-Bank Mandate and Multi-Bank AutoPay Flow" loading="lazy" class="zoomable-img">
-              <figcaption>Figure 5. Cross-bank funding architecture: NPCI e-mandate registration, daily batch aggregation, and distinct accounting separation between pending commitments and settled liquid fund units. Click to view high-res diagram.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <!-- Compliance & Regulatory Guardrails -->
-        <div class="cs-section">
-          <h3>Compliance, Ethics &amp; Regulatory Safeguards</h3>
-          <div class="cs-flow-box">
-            <h5>Key Safeguards Enforced by Design</h5>
-            <ul style="margin:8px 0 0 16px; padding:0; font-size:13.5px; line-height:1.6; color:#484640;">
-              <li><strong>Zero Shame Vocabulary:</strong> The interface strictly eliminates punitive words like "addicted", "failed limit", or "punished". Exits are framed exclusively as high-agency wins.</li>
-              <li><strong>Zero Forced Withdrawals:</strong> Money is NEVER deducted because a student stays in an app. Debits only occur when the student explicitly chooses to exit and stash.</li>
-              <li><strong>Absolute Ledger Transparency:</strong> The UI maintains a strict separation between <em>Pending Commitments</em> (behavioral tracking) and <em>Confirmed Bank Balances</em>. No investment is reported before NPCI clearance.</li>
-              <li><strong>RBI and NPCI alignment (design intent):</strong> Configurable daily caps (e.g. ₹100), pre-debit notifications and 1-tap pause/revoke, designed around RBI e-mandate guidelines. Concept only; requires regulatory and partner review before any launch.</li>
-              <li><strong>Privacy by design:</strong> The concept uses only on-device usage timestamps through Android <code>UsageStatsManager</code> and iOS <code>FamilyControls</code>. It never reads messages, photos or browsing data.</li>
-            </ul>
-          </div>
-        </div>
-
-
-        <!-- Appendix C: Restored Credibility Sections -->
-        <div class="cs-credibility-block" style="border-top:1px solid var(--line);margin-top:40px;padding-top:32px;">
-          <h4 style="font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;">Research &amp; Feasibility Evaluation</h4>
-          
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:28px;">
-            <div style="background:var(--paper-alt);padding:18px;border-radius:4px;border:1px solid var(--line);">
-              <strong style="display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--blue);">Validated in Research</strong>
-              <ul style="margin:0;padding-left:18px;font-size:12.5px;line-height:1.6;color:#484640;">
-                <li>Students exceed intended screen time in-app and report "clock shock".</li>
-                <li>Late-night overruns (11 PM - 2 AM) generate acute regret and anxiety.</li>
-                <li>Many extended browsing sessions originate from checking a single DM or notification.</li>
-              </ul>
-            </div>
-            <div style="background:var(--paper-alt);padding:18px;border-radius:4px;border:1px solid var(--line);">
-              <strong style="display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:#b45309;">Assumed / To Be Validated</strong>
-              <ul style="margin:0;padding-left:18px;font-size:12.5px;line-height:1.6;color:#484640;">
-                <li>Willingness to authorize recurring UPI AutoPay e-mandates for micro-savings.</li>
-                <li>Multi-bank cross-funding success and auto-sweep settlement latency.</li>
-                <li>Student qualification and KYC friction for liquid mutual fund folios.</li>
-                <li>Unit economics for brand sponsorship and merchant streak rewards.</li>
-              </ul>
-            </div>
-          </div>
-
-          <h5 style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:24px 0 10px;">Platform Technical Feasibility</h5>
-          <p style="font-size:13px;line-height:1.6;color:#484640;margin-bottom:16px;">
-            <strong>Android:</strong> Usage monitoring relies on <code>UsageStatsManager</code>. Interstitial overlay prompts depend on user-granted permissions and OS background execution limits; Google Play policy strictly prohibits using Accessibility Services as blanket interceptors.<br>
-            <strong>iOS:</strong> Relies on Apple's official <code>FamilyControls</code> and <code>ManagedSettings</code> entitlements inside the sandbox, requiring specialized entitlement approval.
-          </p>
-
-          <h5 style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:24px 0 10px;">Proposed Usability Testing Plan</h5>
-          <ol style="margin:0 0 24px;padding-left:20px;font-size:13px;line-height:1.6;color:#484640;">
-            <li>Conduct 5 to 8 formative usability tests evaluating onboarding comprehension and trigger configuration.</li>
-            <li>Execute a 3-stage mental model test verifying student comprehension of where saved funds reside: immediate exit, daily mandate execution, and liquid fund allotment.</li>
-            <li>Run an A/B study comparing the guilt-free mindful checkpoint against standard operating system lockouts to measure perceived agency and compliance.</li>
-          </ol>
-
-          <h5 style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:24px 0 10px;">Provenance &amp; Regulatory Frameworks</h5>
-          <ul style="margin:0 0 24px;padding-left:18px;font-size:12px;line-height:1.6;color:var(--muted);">
-            <li>Primary user research: 57-student survey respondents, 8 in-depth interviews (U1 to U8).</li>
-            <li>NPCI, "AutoPay facility on UPI for recurring payments" (2020).</li>
-            <li>RBI, "Processing of e-mandate in UPI for recurring transactions" (2020).</li>
-            <li>AMFI, "Risks in Mutual Funds" and SEBI liquid-scheme investment guidelines.</li>
-            <li>Apple Developer, "Requesting the Family Controls entitlement" documentation.</li>
-          </ul>
-          <p style="font-size:11px;color:var(--muted);font-style:italic;">Proposed technical and financial integrations require regulatory review and partner validation prior to any deployment.</p>
-        </div>
-        <div class="cs-footer-actions">
-          <button type="button" class="button button-primary" onclick="closeSbiModal()">Finished reading</button>
-          <button type="button" class="button button-secondary" onclick="document.getElementById('sbi-modal-body').scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- Legacy Hash Redirect Script -->
+  <script>
+    (function() {
+      var hash = window.location.hash.toLowerCase();
+      if (hash === '#case/ledgermate' || hash === '#ledgermate') {
+        window.location.replace('work/ledgermate/');
+      } else if (hash === '#case/sbi' || hash === '#sbi-mindful-pocket' || hash === '#sbi') {
+        window.location.replace('work/sbi-mindful-pocket/');
+      }
+    })();
+  </script>
   <!-- Full-Resolution Image Lightbox -->
   <div id="cs-lightbox" class="lightbox-modal" onclick="closeLightbox(event)" aria-hidden="true">
     <button type="button" class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close image zoom">✕ Close</button>
@@ -811,33 +397,6 @@
   </div>
 
   <script>
-    function openLmModal() {
-      const modal = document.getElementById('lm-modal');
-      modal.classList.add('is-active');
-      document.body.classList.add('modal-open');
-    }
-    function closeLmModal() {
-      const modal = document.getElementById('lm-modal');
-      modal.classList.remove('is-active');
-      document.body.classList.remove('modal-open');
-    }
-    function openSbiModal() {
-      const modal = document.getElementById('sbi-modal');
-      modal.classList.add('is-active');
-      document.body.classList.add('modal-open');
-    }
-    function closeSbiModal() {
-      const modal = document.getElementById('sbi-modal');
-      modal.classList.remove('is-active');
-      document.body.classList.remove('modal-open');
-    }
-    function handleBackdropClick(e) {
-      if (e.target.id === 'sbi-modal') {
-        closeSbiModal();
-      } else if (e.target.id === 'lm-modal') {
-        closeLmModal();
-      }
-    }
     function openLightbox(src, caption) {
       const lb = document.getElementById('cs-lightbox');
       const img = document.getElementById('lightbox-img');
@@ -856,24 +415,12 @@
       lb.setAttribute('aria-hidden', 'true');
     }
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        const lb = document.getElementById('cs-lightbox');
-        if (lb && lb.classList.contains('is-active')) {
-          closeLightbox();
-        } else {
-          closeSbiModal();
-          closeLmModal();
-        }
-      }
+      if (e.key === 'Escape') closeLightbox();
     });
-
-    // Auto-attach lightbox to zoomable case study images
-    document.querySelectorAll('.cs-figure img, .cs-screens-grid img, .zoomable-img').forEach(img => {
+    document.querySelectorAll('.mindpalace-duo img, .zoomable-img').forEach(img => {
       img.addEventListener('click', () => {
-        const figcaption = img.closest('figure')?.querySelector('figcaption')?.textContent 
-          || img.parentElement?.querySelector('span')?.textContent 
-          || img.alt;
-        openLightbox(img.src, figcaption);
+        const caption = img.closest('figure')?.querySelector('figcaption')?.textContent || img.alt;
+        openLightbox(img.src, caption);
       });
     });
   </script>
