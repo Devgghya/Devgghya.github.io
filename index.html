@@ -373,10 +373,32 @@
       <div class="capabilities"><p>Capabilities</p><div><span>FinTech UX</span><span>Accounting Automation</span><span>Behavioral Banking</span><span>Design Systems</span><span>API Orchestration</span><span>QuickBooks &amp; PropTech</span><span>Product Direction</span><span>Spatial AI / XR</span><span>Responsive Web</span></div></div>
     </section>
 
-    <section class="contact-section" id="contact"><div class="shell"><p class="section-kicker">04 / Contact</p><h2>Let's make<br>something useful.</h2><p class="contact-copy">For collaborations, product work and emerging interface experiments.</p><div class="contact-actions"><a class="button contact-button" href="https://www.linkedin.com/in/devgghya-kulshrestha-88909b314" target="_blank" rel="noreferrer">Start a conversation ↗</a><a class="text-link" href="https://www.instagram.com/devgghya" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></section>
+    <section class="contact-section" id="contact">
+      <div class="shell">
+        <p class="section-kicker">04 / Contact</p>
+        <h2>Let's make<br>something useful.</h2>
+        <p class="contact-copy">For product design roles, accounting automation, and behavioral banking architecture.</p>
+        <div>
+          <span class="contact-availability">
+            <span class="status-dot" aria-hidden="true" style="background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.3);"></span>
+            Open to product design roles and internships
+          </span>
+        </div>
+        <div class="contact-actions">
+          <a class="button contact-button" href="mailto:devgghyakulshrestha27@gmail.com?subject=Portfolio%20enquiry">Email me (devgghyakulshrestha27@gmail.com) ↗</a>
+          <button type="button" class="button button-copy-email" onclick="copyEmail(this)" aria-label="Copy email address to clipboard">Copy email</button>
+          <span id="copy-confirmation" class="copy-toast" aria-live="polite"></span>
+        </div>
+        <div class="contact-secondary-links">
+          <a class="text-link" href="assets/Devgghya_Kulshrestha_Resume.pdf" download="Devgghya_Kulshrestha_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF) ↓</a>
+          <a class="text-link" href="https://www.linkedin.com/in/devgghya-kulshrestha-88909b314" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="text-link" href="https://www.instagram.com/devgghya" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer shell"><div><span class="monogram">DK<span>.</span></span><p>Devgghya Kulshrestha<br>Product designer · FinTech &amp; automation</p></div><p>Designed with intent.<br>Built to be used.</p><p>Dehradun, India<br>© 2026</p></footer>
+  <footer class="site-footer shell"><div><span class="monogram">DK<span>.</span></span><p>Devgghya Kulshrestha<br>Product designer · FinTech &amp; automation<br><a href="mailto:devgghyakulshrestha27@gmail.com" class="footer-email">devgghyakulshrestha27@gmail.com</a></p></div><p>Designed with intent.<br>Built to be used.</p><p>Dehradun, India<br>© 2026</p></footer>
 
   <!-- Legacy Hash Redirect Script -->
   <script>
@@ -397,6 +419,19 @@
   </div>
 
   <script>
+    
+    function copyEmail(btn) {
+      navigator.clipboard.writeText('devgghyakulshrestha27@gmail.com').then(() => {
+        const toast = document.getElementById('copy-confirmation');
+        if (toast) toast.textContent = 'Email copied to clipboard!';
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied ✓';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          if (toast) toast.textContent = '';
+        }, 2500);
+      });
+    }
     function openLightbox(src, caption) {
       const lb = document.getElementById('cs-lightbox');
       const img = document.getElementById('lightbox-img');

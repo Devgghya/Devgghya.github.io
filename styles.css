@@ -359,3 +359,11 @@ body.modal-open { overflow:hidden; }
   .cs-pagination { flex-direction: column; width: 100%; }
   .cs-pagination .button { width: 100%; }
 }
+
+/* Phase 4: Contact & Enquiry Flow Styles */
+.contact-availability { display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; color:rgba(255,255,255,.94); margin:20px 0 0; background:rgba(255,255,255,.12); padding:6px 14px; border-radius:100px; border:1px solid rgba(255,255,255,.2); }
+.button-copy-email { background:rgba(255,255,255,.12); color:#fff; border-color:rgba(255,255,255,.45); }
+.button-copy-email:hover { background:rgba(255,255,255,.25); }
+.copy-toast { font-size:12px; font-weight:800; color:#fff; align-self:center; letter-spacing:.04em; }
+.contact-secondary-links { display:flex; gap:24px; align-items:center; margin-top:36px; flex-wrap:wrap; }
+.footer-email { color:var(--ink); font-weight:700; text-decoration:underline; font-size:11px; }
