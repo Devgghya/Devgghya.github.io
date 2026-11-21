@@ -342,3 +342,9 @@ body.modal-open { overflow:hidden; }
 .mindpalace-duo figure { margin:0; position:relative; overflow:hidden; background:#000; border-radius:4px; }
 .mindpalace-duo img { width:100%; height:100%; object-fit:cover; display:block; }
 .mindpalace-duo figcaption { position:absolute; bottom:10px; left:10px; background:rgba(0,0,0,.75); color:#fff; font-size:9px; font-weight:700; padding:4px 8px; border-radius:2px; letter-spacing:.06em; text-transform:uppercase; }
+
+/* Phase 2: Positioning, status pill & exception queue styles */
+.hero-top-row { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+.status-pill { display:inline-flex; align-items:center; gap:8px; padding:6px 14px; background:rgba(29,78,216,.08); border:1px solid rgba(29,78,216,.25); border-radius:100px; font-size:11.5px; font-weight:700; color:var(--blue); }
+.status-dot { width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 0 3px rgba(16,185,129,.25); display:inline-block; animation:pulse-glow 2s infinite; }
+@keyframes pulse-glow { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.5; transform:scale(.9); } }
