@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /mishu-note-7f2a/
+Disallow: /freshers-2026/
 
 Sitemap: https://devgghya.github.io/sitemap.xml
