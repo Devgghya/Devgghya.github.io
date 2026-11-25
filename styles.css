@@ -130,11 +130,12 @@ img { display:block; max-width:100%; }
 .sbi-brand { display:flex; align-items:center; gap:8px; }
 .sbi-brand svg { flex-shrink:0; }
 .sbi-brand span { font-weight:900; color:#38bdf8; font-size:14px; letter-spacing:.04em; }
-.sbi-screens-duo { display:flex; justify-content:center; align-items:center; gap:22px; margin:20px 0; }
-.sbi-device-frame { width:220px; max-width:230px; height:460px; background:#020b14; border:3px solid rgba(255,255,255,.24); border-radius:30px; overflow:hidden; box-shadow:0 20px 48px -8px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08); display:flex; flex-direction:column; position:relative; flex-shrink:0; }
-.sbi-device-frame::before { content:''; position:absolute; top:7px; left:50%; transform:translateX(-50%); width:48px; height:11px; background:#000; border-radius:10px; z-index:5; box-shadow:0 0 0 1px rgba(255,255,255,.08); }
-.sbi-device-header { padding:22px 10px 6px; background:#020b14; font-size:8px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:#bae6fd; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,.1); flex-shrink:0; z-index:4; }
-.sbi-device-img { width:100%; flex:1; min-height:0; object-fit:cover; object-position:top center; display:block; filter:contrast(1.04); background:#020b14; border-bottom-left-radius:27px; border-bottom-right-radius:27px; }
+.sbi-screens-duo { display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:468px; margin:20px auto; width:100%; }
+.sbi-phone-col { display:flex; flex-direction:column; gap:8px; min-width:0; }
+.sbi-phone-label { display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:8.5px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:#bae6fd; padding:0 4px; }
+.sbi-phone-label span:last-child { color:#7dd3fc; opacity:.85; }
+.sbi-device-frame { width:100%; background:#070d16; padding:7px; border:1px solid rgba(255,255,255,.22); border-radius:26px; box-shadow:0 20px 44px -8px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.06); overflow:hidden; }
+.sbi-device-img { width:100%; height:auto; display:block; background:#f8f9fb; border-radius:19px; }
 .sbi-pocket-badge { margin-top:14px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.2); padding:10px 14px; border-radius:4px; display:flex; justify-content:space-between; align-items:center; }
 .sbi-pocket-badge span { font-size:11px; color:#e0f2fe; font-weight:700; }
 .sbi-pocket-badge strong { font-size:15px; color:var(--signal); font-weight:900; }
@@ -180,9 +181,9 @@ body.modal-open { overflow:hidden; }
 .cs-flow-box h5 { margin:0 0 8px; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink); }
 .cs-flow-box p { font-size:13px; line-height:1.55; margin:0; color:#555; }
 .cs-screens-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:36px 0; }
-.cs-screen-item { border:1px solid var(--line); background:#00192e; border-radius:4px; overflow:hidden; }
-.cs-screen-item img { width:100%; height:auto; display:block; }
-.cs-screen-item span { display:block; padding:12px 16px; font-size:11px; font-weight:800; color:var(--white); background:rgba(0,0,0,.7); text-transform:uppercase; letter-spacing:.08em; }
+.cs-screen-item { border:1px solid var(--line); background:#f8f9fb; border-radius:4px; overflow:hidden; display:flex; flex-direction:column; }
+.cs-screen-item img { width:100%; height:auto; display:block; background:#f8f9fb; }
+.cs-screen-item span { display:block; padding:12px 16px; font-size:11px; font-weight:800; color:var(--white); background:#0a1929; text-transform:uppercase; letter-spacing:.08em; margin-top:auto; }
 .cs-qa { margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--line); }
 .cs-qa strong { display:block; font-size:15px; margin-bottom:8px; color:var(--ink); }
 .cs-qa p { margin:0; font-size:14px; line-height:1.6; color:#444; }
@@ -208,7 +209,7 @@ body.modal-open { overflow:hidden; }
 .zoomable-img:hover { opacity:.94; }
 .lightbox-modal { position:fixed; inset:0; z-index:2000; background:rgba(10,14,20,.94); backdrop-filter:blur(10px); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 240ms ease; }
 .lightbox-modal.is-active { opacity:1; pointer-events:auto; }
-.lightbox-modal img { max-width:92vw; max-height:82vh; object-fit:contain; border-radius:4px; box-shadow:0 12px 48px rgba(0,0,0,.6); }
+.lightbox-modal img { max-width:92vw; max-height:82vh; object-fit:contain; border-radius:4px; background:#f8f9fb; box-shadow:0 12px 48px rgba(0,0,0,.6); }
 .lightbox-caption { color:#e5e7eb; font-size:13px; font-weight:700; margin-top:16px; text-align:center; max-width:800px; line-height:1.5; }
 .lightbox-close { position:absolute; top:24px; right:28px; background:var(--ink); color:var(--white); border:1px solid rgba(255,255,255,.2); padding:10px 18px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; cursor:pointer; }
 .lightbox-close:hover { background:var(--blue); border-color:var(--blue); }
@@ -319,10 +320,8 @@ body.modal-open { overflow:hidden; }
   .sbi-pocket-badge strong { font-size:14px; align-self:flex-end; }
   .lm-queue-card { margin:10px 0; padding:10px; }
   .lm-queue-row { grid-template-columns:1fr; gap:4px; }
-  .sbi-screens-duo { display:flex; justify-content:center; margin:16px 0; }
-  .sbi-device-frame { width:220px; height:450px; margin:0 auto; }
-  .sbi-device-img { width:100%; height:100%; }
-  .sbi-screens-duo .sbi-device-frame:last-child { display:none; }
+  .sbi-screens-duo { grid-template-columns:1fr; max-width:250px; margin:16px auto; }
+  .sbi-screens-duo .sbi-phone-col:last-child { display:none; }
   .cs-quotes-pair,.cs-credibility-grid { grid-template-columns:1fr; }
   .cs-screens-grid { grid-template-columns:1fr; gap:16px; }
   .mindpalace-duo { grid-template-columns:1fr; min-height:auto; }
